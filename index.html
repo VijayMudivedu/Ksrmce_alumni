@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Silver Jubilee Alumni Reunion Invitation</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Dancing+Script&display=swap" rel="stylesheet">
+
   <style>
     :root {
       --navy: #002f4b;
@@ -17,12 +19,20 @@
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Montserrat', sans-serif;
+      /* font-family: 'Montserrat', sans-serif; */
+      /* font-family: 'Dancing Script', cursive; */
+      font-family: 'Raleway', sans-serif;
       background-color: var(--light-green);
       display: flex;
       justify-content: center;
       padding: 40px 20px;
     }
+    h1, h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    color: #2e7d32;
+    }
+
     .invite-container {
       position: relative;
       width: 700px;
@@ -73,7 +83,7 @@
       position: relative;
       width: 150px;
       height: 150px;
-      margin: -50px auto 0;
+      margin: -40px auto 0;
       border: 6px solid var(--text-light);
       border-radius: 50%;
       overflow: hidden;
@@ -82,10 +92,23 @@
       background: url('batch.jpeg') center/cover no-repeat;
     }
     .content {
-      padding: 80px 40px 40px;
+      padding: 0px 40px 40px;
       position: relative;
       z-index: 1;
     }
+    .stylish-header {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+  color: #cba135;
+    }
+
+
+  .year-highlight {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #2e7d32;
+  }
     .poetic-message {
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
@@ -100,6 +123,15 @@
   font-style: italic;
   position: relative;
   }
+  .reunion-tagline {
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--text-dark);
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
   .poetic-message::before {
     content: "★";
     position: absolute;
@@ -169,11 +201,18 @@
       </div>
     </header>
     <div class="batch-circle"></div>
+        <p class="reunion-tagline"> 
+          <span class="year-highlight"> To Reconnect, Reminisce, and Relive treasured memories. 
+          </span>
+        </p>
     <div class="content">
       <div>
         <h2 class="section-title">Invitation</h2>
-        <p>You are cordially invited to the Silver Jubilee Reunion of the <strong>1996–2000 batch</strong> </p>
-        <p> <strong>To Reconnect, Reminisce, and Relive treasured memories. </strong></p>
+        <p>You are cordially invited to the 
+          <span class="stylish-header">Silver Jubilee Reunion</span>
+          of the 
+          <span class="stylish-header">1996–2000 batch</span> 
+ 
       </div>
  
       <div class="section header-info">
@@ -196,12 +235,13 @@
           <ul><li>KSRM College of Engineering Campus, Kadapa</li> <li>Grand Lunch & Campus Tour</li> <ul>
         </div>
       </div>
-      <div>
+      <!-- <div>
         <h2 class="section-title">Guests of Honor</h2>
         <ul>
           <li><strong>Chief Guest:</strong> Dr. XYZ </li>
           <li><strong>Guest of Honour:</strong> Sri. XYZ, Chairman, KSRM Group of Institutions</li>
           <li><strong>Special Guests:</strong>
+            <br>
             <br>
             <ul>
               <li>Dr. ABC (Principal, KSRMCE)</li>
@@ -210,7 +250,7 @@
             </ul>
           </li>
         </ul>
-      </div>
+      </div> -->
       <div>
         <h2 class="section-title">Highlights</h2>
         <ul>
@@ -222,11 +262,13 @@
       </div>
       <div>
         <h2 class="section-title">RSVP & Contact</h2>
-        <p>Name & Phone: TBD<br>WhatsApp #: TBD <br>Registration: TBD</p>
+        <ul>
+          <li> Name: TBD </li>
+          <li>WhatsApp #: TBD </li>
       </div>
       <div>
         <h2 class="section-title">Dress Code</h2>
-        <p>Ethnic or Smart Casual</p>
+        <p><strong> - Ethnic or Smart Casual </strong></p>
       </div>
     </div>
     <footer>
