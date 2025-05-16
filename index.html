@@ -1,215 +1,214 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Silver Jubilee Alumni Reunion Invitation</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Lora:wght@400;700&display=swap"
-        rel="stylesheet">
-    <style>
-        :root {
-            --primary-green: #2e7d32;
-            --light-green: #e8f5e9;
-            --gold: #f9a825;
-            --text-dark: #2e2e2e;
-            --text-light: #ffffff;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Lora', serif;
-            background-color: var(--light-green);
-            color: var(--text-dark);
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
-
-        .invite-container {
-            position: relative;
-            background: var(--text-light);
-            width: 800px;
-            max-width: 100%;
-            border-radius: 12px;
-            overflow: hidden;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        }
-
-        .invite-container::before {
-            content: "";
-            position: absolute;
-            inset: 0; 
-            background: url('clgphoto.JPG') center/cover no-repeat;
-            opacity: 0.1;
-            z-index: 0;
-        }
-
-        header,
-        .content,
-        footer {
-            position: relative;
-            z-index: 1;
-        }
-
-        header {
-            background-color: var(--primary-green);
-            color: var(--text-light);
-            text-align: center;
-            padding: 30px 20px;
-        }
-
-        header img {
-            max-height: 100px;
-            margin-bottom: 20px;
-        }
-
-        header h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            font-size: 2rem;
-            margin-bottom: 8px;
-        }
-
-        header p {
-            font-style: italic;
-            font-size: 1rem;
-        }
-
-        .banner-photo {
-            width: 100%;
-            display: block;
-        }
-
-        .content {
-            padding: 30px 40px;
-            line-height: 1.6;
-        }
-
-        .content .section {
-            margin-bottom: 24px;
-        }
-
-        .content h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            color: var(--primary-green);
-            margin-bottom: 12px;
-            font-size: 1.2rem;
-        }
-
-        .content ul {
-            list-style: none;
-            padding-left: 0;
-        }
-
-        .content ul li {
-            margin-bottom: 8px;
-        }
-
-        .details {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-
-        .details div {
-            background: var(--light-green);
-            padding: 12px;
-            border-radius: 8px;
-        }
-
-        footer {
-            background-color: var(--primary-green);
-            color: var(--text-light);
-            text-align: center;
-            padding: 20px;
-            font-size: 0.9rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Silver Jubilee Alumni Reunion Invitation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #002f4b;
+      --coral: #ff6f61;
+      --primary-green: #2e7d32;
+      --light-green: #f0faf2;
+      --gold: #cba135;
+      --text-dark: #2e2e2e;
+      --text-light: #ffffff;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background-color: var(--light-green);
+      display: flex;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+    .invite-container {
+      position: relative;
+      width: 700px;
+      background: var(--text-light);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+    }
+    .background{-position: absolute; inset:0; background:url('campus.jpg')center/cover no-repeat; opacity:0.08;}
+    header {
+      position: relative;
+      background: var(--navy);
+      color: var(--text-light);
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      align-items: center;
+      gap: 20px;
+      padding: 30px;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('campus.jpg') center/cover no-repeat;
+      opacity: 0.05;
+      z-index: 0;
+    }
+    .logo {
+      position: relative;
+      z-index: 1;
+      width: 100px;
+    }
+    .header-info {
+      position: relative;
+      z-index: 1;
+    }
+    .header-info h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      color: var(--coral);
+      margin-bottom: 6px;
+    }
+    .header-info p {
+      font-size: 1rem;
+      opacity: 0.8;
+    }
+    .batch-circle {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      margin: -75px auto 0;
+      border: 6px solid var(--text-light);
+      border-radius: 50%;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      z-index: 1;
+      background: url('batch.jpg') center/cover no-repeat;
+    }
+    .content {
+      padding: 80px 40px 40px;
+      position: relative;
+      z-index: 1;
+    }
+    .section-title {
+      position: relative;
+      margin-bottom: 16px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--primary-green);
+    }
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 50px;
+      height: 3px;
+      background: var(--coral);
+      margin-top: 4px;
+      border-radius: 2px;
+    }
+    .details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    .details div {
+      background: var(--light-green);
+      padding: 16px;
+      border-left: 6px solid var(--coral);
+      border-radius: 8px;
+    }
+    ul { list-style: none; padding-left: 0; margin-bottom: 24px; }
+    ul li { margin-bottom: 8px; padding-left: 18px; position: relative; }
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 8px;
+      height: 8px;
+      background: var(--coral);
+      border-radius: 50%;
+    }
+    .content p, .content li { font-size: 1rem; margin-bottom: 12px; }
+    footer {
+      background-color: var(--primary-green);
+      color: var(--text-light);
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      border-top: 4px solid var(--coral);
+    }
+  </style>
 </head>
-
 <body>
-    <div class="invite-container">
-        <header>
-            <img src="colgLogo.png" alt="KSRM Logo">
-            <h1>Silver Jubilee Reunion</h1>
-            <p>Celebrating 25 Years of Excellence</p>
-        </header>
-        <img class="banner-photo" src="clgphoto.JPG" alt="Batch Photo">
-        <div class="content">
-            <div class="section">
-                <h2>You Are Cordially Invited</h2>
-                <p>Join us for the Silver Jubilee Reunion of the <strong>1996–2000</strong> </p>
-                <p>To Reconnect, Reminisce, and Relive Treasured memories.</p>
-
-
-                <div class="section">
+  <div class="invite-container">
+    <header>
+      <img class="logo" src="logo.png" alt="KSRM Logo">
+      <div class="header-info">
+        <h1>Silver Jubilee Reunion</h1>
+        <p>Celebrating 25 Years of Excellence</p>
+      </div>
+    </header>
+    <div class="batch-circle"></div>
+    <div class="content">
+      <div>
+        <h2 class="section-title">Invitation</h2>
+        <p>You are cordially invited to the Silver Jubilee Reunion of the <strong>1996–2000 Electronics & Communications Engineering Batch</strong> to reconnect, reminisce, and relive treasured memories.</p>
+      </div>
+ 
+        <div class="section">
                     <h2>A Nostalgic Verse</h2>
                     <p>We spun the world on cassette wheels, rewind-laughter in each hiss, </p>
                     <p> Then burned CDs with trembling hands—sunsets sealed by a fingertip’s kiss.</p>
                     <p> Windows 95 bloomed in pixels, floppy dreams taking flight,</p>
                     <p> Now cloud gardens hum with data, stitching daybreak to AI’s night.</p>
-
+                    <break>
                     <p> Let’s gather once more, dear friends, under the stars of our shared sky,</p>
                     <p> For in the heart of KSRM, our spirits forever fly. </p>
-                </div>
-
-
             </div>
-            <div class="section details">
-                <div>
-                    <h2>Date & Time</h2>
-                    <p>Saturday, 19 July 2025<br>10:00 AM onwards</p>
-                </div>
-                <div>
-                    <h2>Venue</h2>
-                    <p>KSRM College of Engineering Campus, Kadapa<br>(Grand Lunch & Campus Tour)</p>
-                </div>
-            </div>
-            <div class="section">
-                <h2>Honoring Our Esteemed Guests</h2>
-                <ul>
-                    <li><strong>Chief Guest:</strong> Dr. XXX </li>
-                    <li><strong>Guest of Honour:</strong> Sri. XYZ, Chairman, KSRM Group of Institutions</li>
-                    <li><strong>Special Guests: </strong>
-                        <ul>
-                            <li>Dr. ABC (Principal, KSRMCE)</li>
-                            <li>Prof. ABC (HOD, ECE Dept.)</li>
-                            <li>Mr. ABC (Alumni Association President)</li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-            <div class="section">
-                <h2>Highlights</h2>
-                <ul>
-                    <li><strong> Alumni Felicitations </strong></li>
-                    <li><strong>Campus Walk & Memory Lane </strong></li>
-                    <li><strong>Cultural Performances </strong></li>
-                    <li><strong>Tree Planting & Time Capsule </strong></li>
-                    <li><strong>Lunch & Networking Gala </strong></li>
-                </ul>
-            </div>
-            <div class="section">
-                <h2>RSVP & Contact</h2>
-                <p>Name & Phone: TBD<br>Email: <a
-                        href="mailto:alumni@ksrmce.edu.in">alumni@ksrmce.edu.in</a><br>Registration: TBD</p>
-            </div>
-            <div class="section">
-                <h2>Dress Code</h2>
-                <p>Ethnic or Smart Casual</p>
-            </div>
+        
+      <div class="details">
+        <div>
+          <h2 class="section-title">Date & Time</h2>
+          <p>Saturday, 19 July 2025<br>10:00 AM onwards</p>
         </div>
-        <footer>
-            &ldquo;Once a KSRMian, Always a KSRMian&rdquo;
-        </footer>
+        <div>
+          <h2 class="section-title">Venue</h2>
+          <p>KSRM College of Engineering Campus, Kadapa<br>(Grand Lunch & Campus Tour)</p>
+        </div>
+      </div>
+      <div>
+        <h2 class="section-title">Guests of Honor</h2>
+        <ul>
+          <li><strong>Chief Guest:</strong> Dr. XYZ </li>
+          <li><strong>Guest of Honour:</strong> Sri. XYZ, Chairman, KSRM Group of Institutions</li>
+          <li><strong>Special Guests:</strong>
+            <ul>
+              <li>Dr. ABC (Principal, KSRMCE)</li>
+              <li>Prof. ABC (HOD, ECE Dept.)</li>
+              <li>Mr. ABC (Alumni Association President)</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="section-title">Highlights</h2>
+        <ul>
+          <li>Alumni Felicitations</li>
+          <li>Campus Walk & Memory Lane</li>
+          <li>Cultural Performances</li>
+          <li>Lunch & Networking Gala</li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="section-title">RSVP & Contact</h2>
+        <p>Name & Phone: TBD<br>Email: <a href="mailto:alumni@ksrmce.edu.in">alumni@ksrmce.edu.in</a><br>Registration: TBD</p>
+      </div>
+      <div>
+        <h2 class="section-title">Dress Code</h2>
+        <p>Ethnic or Smart Casual</p>
+      </div>
     </div>
+    <footer>
+      “Once a KSRMian, Always a KSRMian”
+    </footer>
+  </div>
 </body>
-
 </html>
