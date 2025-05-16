@@ -86,6 +86,28 @@
       position: relative;
       z-index: 1;
     }
+    .poetic-message {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--navy);
+  background: linear-gradient(120deg, rgba(255,255,255,0.6), rgba(255,255,255,0.4));
+  padding: 20px;
+  margin: 40px 0;
+  border-left: 6px solid var(--gold);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  font-style: italic;
+  position: relative;
+  }
+  .poetic-message::before {
+    content: "★";
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    font-size: 24px;
+    color: var(--coral);
+}
     .section-title {
       position: relative;
       margin-bottom: 16px;
@@ -155,13 +177,13 @@
       </div>
  
       <div class="section header-info">
-                    <h2>A Nostalgic Verse</h2>
-                    <p>We spun the world on cassette wheels, rewind-laughter in each hiss, </p>
-                    <p> Then burned CDs with trembling hands—sunsets sealed by a fingertip’s kiss.</p>
-                    <p> Windows 95 bloomed in pixels, floppy dreams taking flight,</p>
-                    <p> Now cloud gardens hum with data, stitching daybreak to AI’s night.</p>
-                    <p> Let’s gather once more, dear friends, under the stars of our shared sky,</p>
-                    <p> For in the heart of KSRM, our spirits forever fly. </p>
+        <h2 class = "section-title">A Nostalgic Verse</h2>
+        <p class="poetic-message"> We spun the world on cassette wheels, rewind-laughter in each hiss, </p>
+        <p class="poetic-message"> Then burned CDs with trembling hands—sunsets sealed by a fingertip’s kiss.</p>
+        <p class="poetic-message"> Windows 95 bloomed in pixels, floppy dreams taking flight,</p>
+        <p class="poetic-message"> Now cloud gardens hum with data, stitching daybreak to AI’s night.</p>
+        <p class="poetic-message"> Let’s gather once more, dear friends, under the stars of our shared sky,</p>
+        <p class="poetic-message"> For in the heart of KSRM, our spirits forever fly. </p>
       </div>
         
       <div class="details">
